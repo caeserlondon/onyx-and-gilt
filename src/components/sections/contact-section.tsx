@@ -1,6 +1,6 @@
 'use client'
 
-import GlassPillButton from '@/components/ui/GlassPillButton'
+import GlassButton from '@/components/ui/GlassButton'
 import Image from 'next/image'
 import { FormEvent, useMemo, useState } from 'react'
 
@@ -75,26 +75,27 @@ export function ContactSection() {
 
 			<div className='absolute left-20 top-1/2 z-10 w-[360px] -translate-y-1/2 md:left-28 md:w-[400px] lg:left-40 lg:w-[430px]'>
 				<div className='rounded-[28px] bg-black/30 p-6 backdrop-blur-md md:p-7'>
-					<p className='mb-2 text-[11px] uppercase tracking-[0.28em] text-white/80'>
+					<p className='mb-3 text-[11px] uppercase tracking-[0.28em] text-white/80'>
 						Contact
 					</p>
 
-					<h2 className='mb-4 text-5xl font-light leading-none tracking-[-0.05em] text-white'>
+					<h2 className='mb-8 text-5xl font-light leading-none tracking-[-0.05em] text-white'>
 						Let&apos;s talk.
 					</h2>
 
-					<p className='m-12 text-[16px] leading-7 text-white/80'>
+					<p className='m-8 max-w-[360px] text-[17px] leading-8 text-white/80'>
 						If you have a question, an idea, or a project in mind, send me a
-						message.
+						message. Let&apos;s make something great together.
 					</p>
 
-					<form onSubmit={handleSubmit} className='space-y-8'>
+					<form onSubmit={handleSubmit}>
 						<input type='hidden' name='botcheck' className='hidden' />
 
-						<div>
+						<div style={{ marginBottom: '14px', marginTop: '18px' }}>
 							<label
 								htmlFor='name'
-								className='mb-8 block text-sm text-white/80'
+								className='block text-sm text-white/80'
+								style={{ marginBottom: '8px' }}
 							>
 								Name
 							</label>
@@ -104,14 +105,20 @@ export function ContactSection() {
 								type='text'
 								required
 								autoComplete='name'
-								className='h-14 w-full rounded-[18px] border border-white/15 bg-white/5 px-4 text-white placeholder:text-white/45 outline-none'
+								className='h-14 w-full rounded-[18px] border border-white/15 bg-white/5 text-[15px] leading-[1.2] text-white outline-none'
+								style={{
+									paddingLeft: '24px',
+									paddingRight: '24px',
+									boxSizing: 'border-box',
+								}}
 							/>
 						</div>
 
-						<div>
+						<div style={{ marginBottom: '14px' }}>
 							<label
 								htmlFor='email'
-								className='mb-8 block text-sm text-white/80'
+								className='block text-sm text-white/80'
+								style={{ marginBottom: '8px' }}
 							>
 								Email
 							</label>
@@ -121,14 +128,20 @@ export function ContactSection() {
 								type='email'
 								required
 								autoComplete='email'
-								className='h-14 w-full rounded-[18px] border border-white/15 bg-white/5 px-4 text-white placeholder:text-white/45 outline-none'
+								className='h-14 w-full rounded-[18px] border border-white/15 bg-white/5 text-[15px] leading-[1.2] text-white outline-none'
+								style={{
+									paddingLeft: '24px',
+									paddingRight: '24px',
+									boxSizing: 'border-box',
+								}}
 							/>
 						</div>
 
 						<div>
 							<label
 								htmlFor='message'
-								className='mb-8 block text-sm text-white/80'
+								className='block text-sm text-white/80'
+								style={{ marginBottom: '8px' }}
 							>
 								Message
 							</label>
@@ -137,25 +150,31 @@ export function ContactSection() {
 								name='message'
 								required
 								rows={5}
-								className='w-full rounded-[18px] border border-white/15 bg-white/5 px-4 py-4 text-white placeholder:text-white/45 outline-none'
+								className='w-full rounded-[18px] border border-white/15 bg-white/5 text-[15px] leading-7 text-white outline-none'
+								style={{
+									paddingLeft: '24px',
+									paddingRight: '24px',
+									paddingTop: '20px',
+									paddingBottom: '20px',
+									boxSizing: 'border-box',
+								}}
 							/>
 						</div>
 
-						<div className='pt-1'>
-							<GlassPillButton
+						<div style={{ marginTop: '12px' }}>
+							<GlassButton
 								type='submit'
 								disabled={status === 'loading'}
-								className='mt-2'
-							>
-								{status === 'loading' ? 'Sending...' : 'Get in Touch'}
-							</GlassPillButton>
+								label={status === 'loading' ? 'Sending...' : 'Send it my way'}
+							/>
 						</div>
 
 						{status !== 'idle' && (
 							<p
 								className={`text-sm ${
-									status === 'success' ? 'text-white/80' : 'text-[#ffb8b8]'
+									status === 'success' ? 'text-green-500' : 'text-[#e64f4f]'
 								}`}
+								style={{ marginTop: '18px' }}
 							>
 								{statusText}
 							</p>

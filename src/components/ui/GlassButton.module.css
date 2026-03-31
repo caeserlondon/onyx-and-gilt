@@ -1,0 +1,84 @@
+.button {
+	width: 176px;
+	height: 46px;
+	border: none;
+	border-radius: 14px;
+	background: linear-gradient(
+		to right,
+		#51555c,
+		#a1a3a5,
+		#8e949d,
+		#5f646c,
+		#cfd2d6,
+		#8e949d
+	);
+	background-size: 250%;
+	background-position: left;
+	color: #c5c6c9;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition:
+		background-position 1s ease,
+		transform 180ms ease,
+		opacity 180ms ease;
+	overflow: hidden;
+	padding: 0 22px;
+	font-family: var(--font-heading, inherit);
+	letter-spacing: 0.01em;
+	box-shadow:
+		0 10px 24px rgba(0, 0, 0, 0.28),
+		0 1px 0 rgba(255, 255, 255, 0.14) inset;
+}
+
+.button::before {
+	position: absolute;
+	inset: 2px;
+	content: attr(data-label);
+	color: #9d9e9f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	transition:
+		background-position 1s ease,
+		opacity 180ms ease;
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size: 200%;
+	font-family: var(--font-heading, inherit);
+	font-size: 0.98rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	padding: 0 20px;
+	white-space: nowrap;
+}
+
+.text {
+	opacity: 0;
+	pointer-events: none;
+	user-select: none;
+}
+
+.button:hover {
+	background-position: right;
+}
+
+.button:hover::before {
+	background-position: right;
+}
+
+.button:active {
+	transform: scale(0.96);
+}
+
+.button:focus-visible {
+	outline: 2px solid rgba(240, 244, 248, 0.7);
+	outline-offset: 4px;
+}
+
+.button:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
