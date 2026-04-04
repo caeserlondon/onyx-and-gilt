@@ -10,25 +10,25 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const drinks = [
 	{
-		src: '/images/drinks/drink-1.png',
+		src: '/images/drinks/drink-1.webp',
 		alt: 'Onyx Old Fashioned',
 		name: 'Onyx Old Fashioned',
 		offset: 0,
 	},
 	{
-		src: '/images/drinks/drink-2.png',
+		src: '/images/drinks/drink-2.webp',
 		alt: 'Velvet Fig Martini',
 		name: 'Velvet Fig Martini',
 		offset: 26,
 	},
 	{
-		src: '/images/drinks/drink-3.png',
+		src: '/images/drinks/drink-3.webp',
 		alt: 'Marina Ember',
 		name: 'Marina Ember',
 		offset: 0,
 	},
 	{
-		src: '/images/drinks/drink-4.png',
+		src: '/images/drinks/drink-4.webp',
 		alt: 'Gilded Bloom',
 		name: 'Gilded Bloom',
 		offset: 26,

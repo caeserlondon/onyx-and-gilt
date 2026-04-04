@@ -64,10 +64,10 @@ export function ContactSection() {
 	return (
 		<section className='relative h-[760px] overflow-hidden'>
 			<Image
-				src='/images/supporting/contact-bg.png'
+				src='/images/supporting/contact-bg.webp'
 				alt='Onyx and Gilt contact background'
 				fill
-				priority
+				sizes='100vw'
 				className='object-cover object-[72%_center]'
 			/>
 
