@@ -5,7 +5,7 @@ export function Footer() {
 		<footer className='bg-[var(--section)]'>
 			<div className='relative w-full aspect-[1528/684]'>
 				<Image
-					src='/images/supporting/dubai-marina-map-footer.png'
+					src='/images/supporting/dubai-marina-map-footer.webp'
 					alt='Dubai Marina map footer background'
 					fill
 					className='object-contain object-center'
