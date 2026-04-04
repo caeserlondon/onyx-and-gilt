@@ -10,25 +10,25 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const dishes = [
 	{
-		src: '/images/dishes/dish-1.png',
+		src: '/images/dishes/dish-1.webp',
 		alt: 'Signature ribeye steak',
 		name: 'Ribeye Steak',
 		offset: 0,
 	},
 	{
-		src: '/images/dishes/dish-2.png',
+		src: '/images/dishes/dish-2.webp',
 		alt: 'Truffle tagliolini',
 		name: 'Truffle Tagliolini',
 		offset: 26,
 	},
 	{
-		src: '/images/dishes/dish-3.png',
+		src: '/images/dishes/dish-3.webp',
 		alt: 'Miso glazed black cod',
 		name: 'Miso Black Cod',
 		offset: 0,
 	},
 	{
-		src: '/images/dishes/dish-4.png',
+		src: '/images/dishes/dish-4.webp',
 		alt: 'Burrata with charred tomatoes',
 		name: 'Burrata & Tomatoes',
 		offset: 26,
