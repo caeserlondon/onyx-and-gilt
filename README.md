@@ -9,6 +9,11 @@ A cinematic luxury restaurant website concept for a fictional high-rise dining a
   <img src="./public/screenshots/homepage-02.png" alt="Onyx & Gilt homepage screenshot 2" width="48%" />
 </p>
 
+<p align="center">
+  <img src="./public/screenshots/homepage-03.png" alt="Onyx & Gilt homepage screenshot 1" width="48%" />
+  <img src="./public/screenshots/homepage-04.png" alt="Onyx & Gilt homepage screenshot 2" width="48%" />
+</p>
+
 ---
 
 ## Overview
@@ -26,6 +31,24 @@ Visit the deployed project here:
 **[https://onyx-and-gilt.vercel.app/](https://onyx-and-gilt.vercel.app/)**
 
 ---
+
+## Web Vitals & Lighthouse Performance
+
+<p align="center">
+  <img src="./assets/page-speed.png" alt="Caeser Jam Page Speed Insights results" width="49%" />
+  <img src="./assets/axe-core.png" alt="Caeser Jam homepage results" width="49%" />
+</p>
+
+This project achieved **100% in all Lighthouse categories**:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+The site was carefully optimized for fast loading, accessible interaction, strong semantic structure, and overall frontend quality.
+
+---axe-core
 
 ## Technology Stack
 
