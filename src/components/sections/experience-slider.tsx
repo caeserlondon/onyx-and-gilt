@@ -10,31 +10,31 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const experienceImages = [
 	{
-		src: '/images/interiors/experience-1.png',
+		src: '/images/interiors/experience-1.webp',
 		alt: 'Main dining room at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-2.png',
+		src: '/images/interiors/experience-2.webp',
 		alt: 'Intimate window table at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-3.png',
+		src: '/images/interiors/experience-3.webp',
 		alt: 'VIP booth at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-4.png',
+		src: '/images/interiors/experience-4.webp',
 		alt: 'Bar interior at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-5.png',
+		src: '/images/interiors/experience-5.webp',
 		alt: 'Wine pouring moment at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-6.png',
+		src: '/images/interiors/experience-6.webp',
 		alt: 'Late-night dining atmosphere at Onyx & Gilt',
 	},
 	{
-		src: '/images/interiors/experience-7.png',
+		src: '/images/interiors/experience-7.webp',
 		alt: 'Main balcony at Onyx & Gilt',
 	},
 ]
